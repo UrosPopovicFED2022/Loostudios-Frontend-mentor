@@ -1,0 +1,94 @@
+footer {
+  background: $color--black;
+  padding: 45px $px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-brand {
+  margin-bottom: 20px;
+}
+
+.footer-brand img {
+  max-width: 140px;
+}
+
+// Footer nav styled with header nav in section HEADER
+
+.footer-right {
+  text-align: right;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  font-size: 1.8em;
+  color: $color--white;
+}
+
+.social-links a:not(:last-child) {
+  margin-right: 12px;
+}
+
+.copyright {
+  color: $color--dark--gray;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 45px 80px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-left {
+    margin-bottom: 30px;
+  }
+
+  .footer-nav ul {
+    place-content: center;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 55px 40px;
+  }
+
+  .footer-left {
+    margin-bottom: 50px;
+  }
+
+  .footer-brand {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    padding: 55px 25px;
+  }
+
+  .footer-nav ul {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+  }
+
+  .social-links {
+    margin-bottom: 15px;
+  }
+}

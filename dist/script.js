@@ -1,0 +1,2 @@
+"use strict";const hamburger=document.querySelector("#open-btn"),closeBtn=document.querySelector("#close-btn"),navBar=document.querySelector(".navbar-nav"),navbarToggle=function(){navBar.classList.toggle("active")};hamburger.addEventListener("click",navbarToggle),closeBtn.addEventListener("click",navbarToggle);
+//# sourceMappingURL=script.js.map
